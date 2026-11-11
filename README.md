@@ -13,6 +13,16 @@
 | 样例评测 | `Ctrl+Alt+B` | CPH-NG 逐组比对输入/输出，给出 AC / WA / TLE / RE / CE 等判定 + 耗时 |
 | 断点调试 | 左侧「运行和调试」 | gdb 调试，与 F5 互不干扰 |
 
+## 效果
+
+判题面板：每组样例的判定、耗时、输入 / 答案 / 实际输出都在一个面板里，`#3` 是故意写错的答案，直接标红 `WA` 并显示实际输出 `300` 与预期 `301` 的差异。
+
+![CPH-NG 判题面板](docs/images/screenshot-verdicts.png)
+
+完整窗口（左侧 CPH-NG 判题，右侧代码）：
+
+![VS Code 整体界面](docs/images/screenshot-judge.png)
+
 ## 快速开始
 
 ### 方式一：一键脚本（推荐）
