@@ -153,7 +153,7 @@ if (-not $SkipConfig) {
             Write-Warn2 'keybindings.json 格式意外，未修改'
         }
     } else {
-        Write-Utf8 $kbPath ($entry | ConvertTo-Json -Depth 6)
+        Write-Utf8 $kbPath (ConvertTo-Json -InputObject @($entry) -Depth 6)
         Write-Ok "keybindings.json 已创建: $kbPath"
     }
 }
