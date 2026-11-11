@@ -1,0 +1,8 @@
+[
+  {
+    "key": "f5",
+    "command": "workbench.action.tasks.runTask",
+    "args": "编译并运行 (F5)",
+    "when": "!inDebugMode && (editorLangId == cpp || editorLangId == c)"
+  }
+]

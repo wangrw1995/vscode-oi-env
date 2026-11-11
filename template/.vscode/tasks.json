@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "编译并运行 (F5)",
+      "type": "shell",
+      "command": "\"${workspaceFolder}\\.vscode\\run-cpp.bat\" \"${file}\"",
+      "options": { "cwd": "${fileDirname}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "focus": true,
+        "clear": true,
+        "echo": false,
+        "showReuseMessage": false
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "只编译 (Ctrl+Shift+B)",
+      "type": "shell",
+      "command": "\"${workspaceFolder}\\.vscode\\compile-only.bat\" \"${file}\"",
+      "options": { "cwd": "${fileDirname}" },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true,
+        "echo": false,
+        "showReuseMessage": false
+      },
+      "problemMatcher": ["$gcc"],
+      "group": { "kind": "build", "isDefault": true }
+    }
+  ]
+}

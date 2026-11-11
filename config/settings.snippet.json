@@ -1,0 +1,46 @@
+// 用户级 settings.json 片段（%APPDATA%\Code\User\settings.json）
+// 路径请按自己的机器改；scripts/install.ps1 会自动探测并写入。
+{
+  // ---- Python ----
+  "python.defaultInterpreterPath": "C:\\Users\\<you>\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "basic",
+
+  // ---- 一键运行（Code Runner 作为备用入口，Ctrl+Alt+N）----
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.clearPreviousOutput": true,
+
+  // ---- C/C++ 智能提示 ----
+  "C_Cpp.default.compilerPath": "C:\\w64devkit\\bin\\g++.exe",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-x64",
+
+  // ---- 终端：关掉 WSL 探测，避免未装 WSL 时弹安装窗口 ----
+  "terminal.integrated.useWslProfiles": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": { "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe", "args": [] },
+    "Command Prompt": { "path": "C:\\Windows\\System32\\cmd.exe", "args": [] }
+  },
+  "terminal.integrated.automationProfile.windows": {
+    "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "args": []
+  },
+
+  // ---- 编辑体验 ----
+  "editor.fontSize": 15,
+  "editor.tabSize": 4,
+  "files.encoding": "utf8",
+  "markdown.preview.breaks": true,
+  "workbench.startupEditor": "none",
+
+  // ---- CPH-NG 样例评测 ----
+  "cph-ng.languages.cppCompiler": "C:\\w64devkit\\bin\\g++.exe",
+  "cph-ng.languages.cppCompilerArgs": "-O2 -std=c++17 -Wall -DCPH -Wl,--stack=268435456",
+  "cph-ng.languages.cppObjcopy": "C:\\w64devkit\\bin\\objcopy.exe",
+  "cph-ng.languages.cCompiler": "C:\\w64devkit\\bin\\gcc.exe",
+  "cph-ng.languages.cCompilerArgs": "-O2 -std=c17 -Wall -DCPH -Wl,--stack=268435456",
+  "cph-ng.sidebar.showOobe": false
+}

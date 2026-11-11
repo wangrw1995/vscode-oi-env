@@ -1,0 +1,10 @@
+ms-vscode.cpptools
+ms-vscode.cpptools-extension-pack
+ms-python.python
+ms-python.vscode-pylance
+ms-python.debugpy
+yzhang.markdown-all-in-one
+davidanson.vscode-markdownlint
+formulahendry.code-runner
+langningchen.cph-ng
+MS-CEINTL.vscode-language-pack-zh-hans

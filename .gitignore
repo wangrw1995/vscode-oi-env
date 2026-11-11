@@ -1,0 +1,18 @@
+# build output
+*.exe
+*.o
+*.obj
+a.out
+
+# CPH-NG per-problem data (binary, machine specific)
+.cph-ng/
+
+# python
+__pycache__/
+*.pyc
+
+# editors / OS
+.vs/
+Thumbs.db
+desktop.ini
+.DS_Store

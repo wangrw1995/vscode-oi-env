@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "MinGW-w64",
+      "includePath": ["${workspaceFolder}/**", "C:/w64devkit/include/**"],
+      "defines": [],
+      "compilerPath": "C:/w64devkit/bin/g++.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
